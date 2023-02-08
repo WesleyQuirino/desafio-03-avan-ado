@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Avalie a sua mentoria</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Avalie a sua mentoria</h1>
+
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <br />
+
+      <img src="img.svg" alt="balão de fala com estrelas" />
+
+      <div>Informações pessoais</div>
+    </header>
+    <main>
+      <form action="" method="post" id="form-avaliation">
+        <fieldset>
+          <div id="dados-pessoais">
+            <div class="model-box">
+              <label for="input-name" form="form-avaliation">Nome</label>
+              <input type="text" id="input-name" name="name" required />
+            </div>
+            <div class="model-box">
+              <label for="input-lastname" form="form-avaliation"
+                >Sobre nome</label
+              >
+              <input type="text" id="input-lastname" name="lastname" required />
+            </div>
+          </div>
+          <div class="model-box">
+            <label for="input-email" form="form-avaliation"
+              >Email
+              <span>(digite um email válido)</span>
+            </label>
+            <input type="email" id="input-email" name="email" required />
+          </div>
+          <section>
+            <legend class="title">Informações do mentor</legend>
+            <div class="line"></div>
+            <div class="model-select">
+              <label for="input-mentor" form="form-avaliation">
+                Selecione quem foi o seu mentor
+              </label>
+              <select name="select" id="input-mentor" required>
+                <optgroup>
+                  <option value=""></option>
+                  <option value="João">João</option>
+                  <option value="Mario">Mario</option>
+                  <option value="Bianca">Bianca</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="model-box">
+              <label for="input-feedback" form="form-avaliation">
+                Feedback sobre o mentor
+              </label>
+              <textarea name="Feedback" id="input-feedback" required>
+              </textarea>
+            </div>
+            <div class="questions">
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  name="questions"
+                  id="input-questions"
+                  form="form-avaliation"
+                />
+                <label for="input-questions"></label>
+              </div>
+              <p>
+                Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+              </p>
+            </div>
+          </section>
+          <section>
+            <legend class="title">Agendando próxima mentoria</legend>
+            <div class="line"></div>
+            <div class="date">
+              <div class="form-date">
+                <label for="input-date">Data<span>(DD/MM/AAAA)</span></label>
+                <input
+                  type="text"
+                  name="date"
+                  id="input-date"
+                  onfocus="this.type='date'"
+                  onblur="this.type='text'"
+                  form="form-avaliation"
+                  required
+                />
+              </div>
+              <div class="time">
+                <div>
+                <label for="input-time">Das</label>
+                <input
+                  type="text"
+                  name="timebegin"
+                  id="input-time"
+                  onfocus="this.type='time'"
+                  onblur="this.type='text'"
+                  form="form-avaliation"
+                  required/>
+                </div>
+                <div>
+                  <label for="input-time">Até</label>
+                  <input
+                  type="text"
+                  name="timebegin"
+                  id="input-time"
+                  onfocus="this.type='time'"
+                  onblur="this.type='text'"
+                  form="form-avaliation"
+                  required/>
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+          <button type="submit" form="form-avaliation">Salvar</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
